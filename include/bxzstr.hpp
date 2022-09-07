@@ -7,6 +7,11 @@
  * file from the zstr project (https://github.com/mateidavid/zstr)
  * written by Matei David (https://github.com/mateidavid). */
 
+#pragma once
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-parameter"
+
 #include "config.hpp"
 
 #ifndef BXZSTR_BXZSTR_HPP
@@ -371,3 +376,5 @@ class ofstream : public detail::strict_fstream_holder< strict_fstream::ofstream 
 } // namespace bxz
 
 #endif
+
+#pragma clang diagnostic pop // -Wunused-parameter
